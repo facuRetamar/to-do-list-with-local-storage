@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-size: 62.5;
+    padding: 0;
+    margin: 0;
+  }
+
+
+header{
+    background: rgb(165, 195, 195);
+
+}
+.formularioUI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 20px 
+}
+
+#boton_submit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: min-content;
+    border-radius: 5px;
+    background: rgb(69, 124, 233);
+    font-weight: 700;
+    border: none;
+    font-size: larger;
+    color: white;
+    padding: 1em;
+}
+#input_actividad{
+    height: 3em;
+    width: 400px;
+    border-radius: 5px;
+    background: rgb(69, 124, 233);
+    font-weight: 400;
+    border: none;
+    font-size: larger;
+    color: white;
+    padding-left: 1em;
+}
+#input_actividad::placeholder{
+    color: rgba(255,255,255, .5);
+}
+#input_fecha{
+    font-size: larger;
+}
+.container_actividades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    background: linear-gradient(to right, rgb(86, 186, 195), rgb(13, 122, 155));
+}
+
+.activity_li{
+    height: 2em;
+    width: 400px;
+    background: linear-gradient(to right, rgba(255,255,255, .3),rgba(255,255,255, .5) ); 
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+    margin: 1em;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-size: larger;
+}
+.span{
+    display: flex;
+}
+.icono,
+.material-icons-outlined{
+    display: inline;
+   margin-left: .5em;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.label_fecha{
+ margin-left: 3em;
+}
+
+.LI_actividad-terminada{
+    height:3em;
+    width: 70%;
+    max-width: 500px;
+    background: rgb(124, 8, 8);
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    margin-top: 2em; 
+    color:white;
+    font-size: larger;
+    border-radius: 8px;
+}
+#nombre_actividad-terminada,
+#boton_actividad-terminada{
+    margin:  0 20px;
+}
+
+.actividades_terminadas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:50vh;
+    border-top: 2px solid black;
+    background: linear-gradient(to right, rgb(86, 186, 195), rgb(13, 122, 155));
+}
+#boton_actividad-terminada{
+    cursor: pointer
+}
+.actividades_terminadas{
+    padding: 20px;
+}
+
+
+
